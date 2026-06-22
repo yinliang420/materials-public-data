@@ -35,8 +35,7 @@
 11. [Literature Mining and Text Resources · 文献挖掘与文本资源](#11-literature-mining-and-text-resources--文献挖掘与文本资源)
 12. [Books and Handbooks · 书籍与手册](#12-books-and-handbooks--书籍与手册)
 13. [Learning Resources and Toy Datasets · 学习资源与教学数据集](#13-learning-resources-and-toy-datasets--学习资源与教学数据集)
-14. [Related Awesome Lists · 相关清单](#14-related-awesome-lists--相关清单)
-15. [Contributing and License · 贡献与许可](#15-contributing-and-license--贡献与许可)
+14. [Contributing and License · 贡献与许可](#14-contributing-and-license--贡献与许可)
 
 ---
 
@@ -225,12 +224,7 @@
 - 🟢 **[nanoHUB](https://nanohub.org/)** — Simulation tools, courses, and published nanomaterial datasets.
 - 🟢 **[Materials Project Workshop](https://workshop.materialsproject.org/)** — Free tutorials on pymatgen, the MP API, and high-throughput workflows.
 
-## 14. Related Awesome Lists · 相关清单
-
-- **[sedaoturak/data-resources-for-materials-science](https://github.com/sedaoturak/data-resources-for-materials-science)** — The original list that inspired this one (databases, datasets, handbooks).
-- **[tilde-lab/awesome-materials-informatics](https://github.com/tilde-lab/awesome-materials-informatics)** — Broader awesome list covering codes, databases, and tools for materials informatics.
-
-## 15. Contributing and License · 贡献与许可
+## 14. Contributing and License · 贡献与许可
 
 **Contributing · 贡献**
 Found a dead link, an outdated entry, or a resource that belongs here? Open an issue or a pull request. Please keep entries one line, add the access tag (🟢/🟡/🔴) and data-nature tag (🧮/🧪), and place them in the most relevant section.
