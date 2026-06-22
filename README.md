@@ -1,47 +1,47 @@
-# Materials Data Resources · 材料科学数据资源大全
+# Materials Data Resources
+
+**English** | [简体中文](README.zh-CN.md)
 
 > A curated, regularly expanded list of **databases, datasets, benchmarks, repositories and tools** for materials science, computational materials, and materials informatics / machine learning.
->
-> 一份面向**材料科学 / 计算材料 / 材料信息学与机器学习**的精选数据资源清单：涵盖数据库、数据集、ML 基准、通用仓库、表征与光谱、软件工具等。持续扩充。
 
-中文说明：这份清单整理了做材料数据驱动研究时常用的数据来源，按"用途"而非"材料类别"组织，方便快速定位。每条目都标注了**可获取性**（开放 / 半开放 / 商业）和**数据性质**（计算 / 实验）。本清单受 [`sedaoturak/data-resources-for-materials-science`](https://github.com/sedaoturak/data-resources-for-materials-science) 启发，并在其基础上大幅补全了晶体学三大库、光谱与表征、ML 基准、2D / 电池 / 热电 / 超导等领域库、软件工具链与文献挖掘资源。
+This list organizes resources by **purpose** rather than by material class, so you can locate what you need quickly. Each entry is tagged by **accessibility** (open / freemium / commercial) and **data nature** (computational / experimental). It was inspired by [`sedaoturak/data-resources-for-materials-science`](https://github.com/sedaoturak/data-resources-for-materials-science) and substantially expands it with the major crystallographic databases, spectroscopy & characterization, ML benchmarks, domain databases (2D / batteries / thermoelectrics / superconductors), software tooling, and literature-mining resources.
 
 ---
 
-## Legend · 图例
+## Legend
 
-| Tag | Meaning · 含义 |
+| Tag | Meaning |
 |---|---|
-| 🟢 | Open / free to access · 开放免费 |
-| 🟡 | Freemium — partly open, registration or paid tiers · 半开放（注册/部分付费） |
-| 🔴 | Commercial / subscription · 商业订阅 |
-| 🧮 | Primarily computational data (DFT, MD, ML) · 以计算数据为主 |
-| 🧪 | Primarily experimental / measured data · 以实验数据为主 |
+| 🟢 | Open / free to access |
+| 🟡 | Freemium — partly open, registration or paid tiers |
+| 🔴 | Commercial / subscription |
+| 🧮 | Primarily computational data (DFT, MD, ML) |
+| 🧪 | Primarily experimental / measured data |
 
 ---
 
-## Table of Contents · 目录
+## Table of Contents
 
-1. [Computational and DFT Databases · 计算与 DFT 数据库](#1-computational-and-dft-databases--计算与-dft-数据库)
-2. [Crystallography and Structure Databases · 晶体学与结构数据库](#2-crystallography-and-structure-databases--晶体学与结构数据库)
-3. [Experimental and Engineering Property Databases · 实验与工程性能数据库](#3-experimental-and-engineering-property-databases--实验与工程性能数据库)
-4. [Spectroscopy and Characterization Databases · 光谱与表征数据库](#4-spectroscopy-and-characterization-databases--光谱与表征数据库)
-5. [Domain-Specific Databases · 专题领域数据库](#5-domain-specific-databases--专题领域数据库)
-6. [Machine Learning Datasets and Benchmarks · 机器学习数据集与基准](#6-machine-learning-datasets-and-benchmarks--机器学习数据集与基准)
-7. [General-Purpose Data Repositories · 通用数据仓库](#7-general-purpose-data-repositories--通用数据仓库)
-8. [Microscopy and Image Datasets · 显微与图像数据集](#8-microscopy-and-image-datasets--显微与图像数据集)
-9. [Interatomic Potentials and Force Fields · 原子间势与力场](#9-interatomic-potentials-and-force-fields--原子间势与力场)
-10. [Software and Tools · 软件与工具](#10-software-and-tools--软件与工具)
-11. [Literature Mining and Text Resources · 文献挖掘与文本资源](#11-literature-mining-and-text-resources--文献挖掘与文本资源)
-12. [Books and Handbooks · 书籍与手册](#12-books-and-handbooks--书籍与手册)
-13. [Learning Resources and Toy Datasets · 学习资源与教学数据集](#13-learning-resources-and-toy-datasets--学习资源与教学数据集)
-14. [Contributing and License · 贡献与许可](#14-contributing-and-license--贡献与许可)
+1. [Computational and DFT Databases](#1-computational-and-dft-databases)
+2. [Crystallography and Structure Databases](#2-crystallography-and-structure-databases)
+3. [Experimental and Engineering Property Databases](#3-experimental-and-engineering-property-databases)
+4. [Spectroscopy and Characterization Databases](#4-spectroscopy-and-characterization-databases)
+5. [Domain-Specific Databases](#5-domain-specific-databases)
+6. [Machine Learning Datasets and Benchmarks](#6-machine-learning-datasets-and-benchmarks)
+7. [General-Purpose Data Repositories](#7-general-purpose-data-repositories)
+8. [Microscopy and Image Datasets](#8-microscopy-and-image-datasets)
+9. [Interatomic Potentials and Force Fields](#9-interatomic-potentials-and-force-fields)
+10. [Software and Tools](#10-software-and-tools)
+11. [Literature Mining and Text Resources](#11-literature-mining-and-text-resources)
+12. [Books and Handbooks](#12-books-and-handbooks)
+13. [Learning Resources and Toy Datasets](#13-learning-resources-and-toy-datasets)
+14. [Contributing and License](#14-contributing-and-license)
 
 ---
 
-## 1. Computational and DFT Databases · 计算与 DFT 数据库
+## 1. Computational and DFT Databases
 
-大规模第一性原理 / 高通量计算数据库，是 ML 势函数与材料筛选的主力数据源。
+Large-scale first-principles / high-throughput computational databases — the workhorses for ML potentials and materials screening.
 
 - 🟢 🧮 **[Materials Project](https://materialsproject.org/)** — Hundreds of thousands of DFT-computed inorganic compounds with formation energies, band structures, elastic/piezoelectric tensors, X-ray absorption spectra, and a battery explorer. REST + Python API (`mp-api`).
 - 🟢 🧮 **[OQMD — Open Quantum Materials Database](https://oqmd.org/)** — DFT thermodynamic and structural properties for ~1M+ materials; full database downloadable.
@@ -55,9 +55,9 @@
 - 🟢 🧮 **[OPTIMADE](https://www.optimade.org/)** — Not a database but a *common API specification* that lets you query Materials Project, OQMD, AFLOW, COD, NOMAD, JARVIS, and many more through one interface.
 - 🔴 🧮🧪 **[Pauling File / MPDS](https://mpds.io/)** — Crystal structures, phase diagrams, and physical properties for inorganic compounds; large curated commercial database with an open API tier.
 
-## 2. Crystallography and Structure Databases · 晶体学与结构数据库
+## 2. Crystallography and Structure Databases
 
-晶体结构（CIF）的权威来源——做结构识别、XRD 物相、生成模型训练时绕不开。
+Authoritative sources of crystal structures (CIF) — indispensable for structure identification, XRD phase ID, and training generative models.
 
 - 🟢 🧪 **[Crystallography Open Database (COD)](http://www.crystallography.net/cod/)** — Open collection of 500k+ crystal structures of organic, inorganic, metal-organic compounds and minerals.
 - 🔴 🧪 **[ICSD — Inorganic Crystal Structure Database](https://icsd.products.fiz-karlsruhe.de/)** — The largest curated database of fully identified inorganic crystal structures (FIZ Karlsruhe). Subscription.
@@ -66,9 +66,9 @@
 - 🟢 🧪 **[American Mineralogist Crystal Structure Database (AMCSD)](http://rruff.geo.arizona.edu/AMS/amcsd.php)** — Open crystal structures published in mineralogical journals.
 - 🟢 🧮 **[Bilbao Crystallographic Server](https://www.cryst.ehu.es/)** — Free programs and databases for space groups, symmetry, band representations, and topological analysis.
 
-## 3. Experimental and Engineering Property Databases · 实验与工程性能数据库
+## 3. Experimental and Engineering Property Databases
 
-工程材料的力学/热/物理性能——选材、对标、数据挖掘常用。
+Mechanical / thermal / physical properties of engineering materials — for materials selection, benchmarking, and data mining.
 
 - 🟢 🧪 **[NIST Standard Reference Data (SRD)](https://www.nist.gov/srd)** — Catalog of dozens of authoritative reference databases (thermophysical, kinetics, alloys, ceramics, diffusion, etc.).
 - 🟡 🧪 **[MatWeb](https://www.matweb.com/)** — Datasheets for 100k+ metals, polymers, ceramics, and composites; free search with paid bulk export.
@@ -81,9 +81,9 @@
 - 🟢 🧪 **[The Engineering ToolBox](https://www.engineeringtoolbox.com/)** — Properties of gases, fluids, and solids for engineering calculations.
 - 🟢 🧪 **[HTEM DB (High Throughput Experimental Materials)](https://htem.nrel.gov/)** — Composition, structure, optical and electrical properties of combinatorially-grown thin films (NREL).
 
-## 4. Spectroscopy and Characterization Databases · 光谱与表征数据库
+## 4. Spectroscopy and Characterization Databases
 
-谱图与表征数据（IR / Raman / XRD / XAS / UV-Vis 等）——结构鉴定、谱图反演与谱-性质学习的基础。
+Spectral and characterization data (IR / Raman / XRD / XAS / UV-Vis) — the basis for structure identification, spectral inversion, and spectrum–property learning.
 
 - 🟢 🧪 **[RRUFF](https://rruff.info/)** — Reference Raman, infrared, XRD, and chemistry data for minerals; the de-facto standard mineral spectroscopy database.
 - 🟢 🧪 **[NIST Chemistry WebBook](https://webbook.nist.gov/chemistry/)** — IR, mass, UV-Vis spectra plus thermochemical data for tens of thousands of compounds.
@@ -92,52 +92,54 @@
 - 🟢 🧮 **[Materials Project XAS](https://next-gen.materialsproject.org/xas)** — FEFF-computed X-ray absorption spectra (XANES + EXAFS, K- and L-edges): 500k+ spectra over 40k+ materials, queryable via `mp-api` (`mpr.materials.xas.search`).
 - 🟢 🧮 **[ORNL AISD-Ex](https://www.osti.gov/biblio/1969001)** — Computed UV/Vis (TD-DFT) absorption spectra for ~10M organic molecules.
 
-## 5. Domain-Specific Databases · 专题领域数据库
+## 5. Domain-Specific Databases
 
-### Polymers · 聚合物
+Databases grouped by application area.
+
+### Polymers
 - 🟡 🧪 **[PoLyInfo (NIMS)](https://polymer.nims.go.jp/en/)** — The largest polymer property database: structures, processing, and properties from the literature.
 - 🟡 🧮 **[Polymer Genome](https://www.polymergenome.org/)** — ML-based polymer property prediction platform (Ramprasad group).
 - 🟢 🧮 **[Khazana](https://khazana.gatech.edu/)** — Repository of polymer and molecular data with ML-ready descriptors (Georgia Tech).
 - 🟢 🧪 **[Polymer Property Predictor and Database (PPPDB)](https://pppdb.uchicago.edu/)** — Curated χ-parameters and glass-transition temperatures extracted from the literature.
 
-### Glass and Ceramics · 玻璃与陶瓷
+### Glass and Ceramics
 - 🟢 🧪 **[SciGlass](https://github.com/epam/SciGlass)** — 420k+ glass compositions with properties; now open-sourced on GitHub.
 - 🟢 🧮 **[Python for Glass Genomics (PyGGi)](https://pyggi.iitd.ac.in/)** — Glass property modeling and optimization platform (IIT Delhi).
 
-### Metal-Organic Frameworks and Porous Materials · MOF 与多孔材料
+### Metal-Organic Frameworks and Porous Materials
 - 🟢 🧮 **[CoRE MOF](https://zenodo.org/records/3370144)** — Computation-Ready, Experimental MOF structures (40k+) derived from the CSD and cleaned for simulation.
 - 🟢 🧮 **[QMOF Database](https://github.com/Andrew-S-Rosen/QMOF)** — 20k+ MOFs with DFT-computed electronic properties; also browsable on Materials Project.
 - 🟢 🧮 **[Open DAC (ODAC23)](https://open-dac.github.io/)** — Large-scale DFT dataset of CO₂/H₂O adsorption in MOFs for direct air capture (Meta FAIR Chemistry).
 
-### Catalysis and Surfaces · 催化与表面
+### Catalysis and Surfaces
 - 🟢 🧮 **[Catalysis-Hub.org](https://www.catalysis-hub.org/)** — DFT surface-reaction energetics with interactive visualization and a GraphQL API.
 - 🟢 🧮 **[Open Catalyst Project / FAIR Chemistry](https://opencatalystproject.org/)** — OC20, OC22, OCx24 catalysis datasets and pretrained models (`fairchem`).
 
-### Perovskites · 钙钛矿
+### Perovskites
 - 🟢 🧪 **[The Perovskite Database Project](https://www.perovskitedatabase.com/)** — Device and material data hand-extracted from 16,000+ perovskite solar-cell papers.
 
-### 2D Materials · 二维材料
+### 2D Materials
 - 🟢 🧮 **[C2DB — Computational 2D Materials Database](https://cmr.fysik.dtu.dk/c2db/c2db.html)** — 4,000+ atomically thin materials with structural, electronic, magnetic, and optical properties (DTU).
 - 🟢 🧮 **[2DMatPedia](http://www.2dmatpedia.org/)** — 6,000+ 2D structures from top-down and bottom-up screening.
 
-### Batteries and Energy · 电池与能源
+### Batteries and Energy
 - 🟢 🧪 **[Battery Archive](https://batteryarchive.org/)** — Standardized public repository of battery cycling and safety data, with built-in visualization and CSV export.
 - 🟢 🧮 **[Materials Project Battery Explorer](https://next-gen.materialsproject.org/)** — Computed insertion/conversion electrode properties (voltage, capacity, stability).
 
-### Thermoelectrics · 热电
+### Thermoelectrics
 - 🟢 🧪 **[Starrydata2](https://www.starrydata2.org/)** — 190k+ digitized property curves (Seebeck, resistivity, thermal conductivity) extracted from 13,000+ papers; a model for literature-curve data sharing.
 
-### Superconductors · 超导
+### Superconductors
 - 🟢 🧪 **[SuperCon (NIMS)](https://supercon.nims.go.jp/en/)** — The canonical superconductor database; the cleaned 26k-record version is on [MDR](https://mdr.nims.go.jp/collections/5712mb227).
 - 🟢 🧮🧪 **[3DSC](https://github.com/aimat-lab/3DSC)** — SuperCon entries matched to 3D crystal structures, ready for structure-based ML.
 
-### Phase Diagrams and Thermodynamics · 相图与热力学
+### Phase Diagrams and Thermodynamics
 - 🔴 🧪 **[ASM Alloy Phase Diagram Database](https://matdata.asminternational.org/apd/)** — Tens of thousands of evaluated binary/ternary alloy phase diagrams.
 - 🟢 🧪 **[NIST Self-Diffusion and Impurity Diffusion Database](https://www.nist.gov/srd)** — Diffusion coefficients and Arrhenius parameters (part of NIST SRD).
 
-## 6. Machine Learning Datasets and Benchmarks · 机器学习数据集与基准
+## 6. Machine Learning Datasets and Benchmarks
 
-可直接喂给模型的数据集与标准化基准——做属性预测、势函数、生成模型时优先看这些。
+Datasets and standardized benchmarks you can feed straight into a model — start here for property prediction, potentials, and generative models.
 
 - 🟢 🧮 **[Matbench](https://matbench.materialsproject.org/)** — The standard 13-task supervised-learning benchmark for materials property prediction.
 - 🟢 🧮 **[Matbench Discovery](https://matbench-discovery.materialsproject.org/)** — Leaderboard for universal ML interatomic potentials on high-throughput stability prediction.
@@ -149,9 +151,9 @@
 - 🟢 🧮 **[Mechanical MNIST](https://github.com/elejeune11/Mechanical-MNIST)** — Benchmark dataset of heterogeneous-material deformation for surrogate modeling.
 - 🟢 🧮🧪 **[Hugging Face Datasets — materials tag](https://huggingface.co/datasets?search=materials)** — Growing hub of community-uploaded materials and chemistry datasets.
 
-## 7. General-Purpose Data Repositories · 通用数据仓库
+## 7. General-Purpose Data Repositories
 
-跨学科数据托管平台——很多论文的补充数据 / 原始数据集就挂在这些地方，按 DOI 检索。
+Cross-disciplinary hosting platforms — where much of the supplementary / raw data behind papers lives; search by DOI.
 
 - 🟢 **[Zenodo](https://zenodo.org/)** — CERN-backed open repository; DOIs for any dataset, code, or supplementary material.
 - 🟢 **[Figshare](https://figshare.com/)** — General research-output repository widely used for materials supplementary data.
@@ -162,25 +164,25 @@
 - 🟢 🧮🧪 **[Materials Data Facility (MDF)](https://www.materialsdatafacility.org/)** — Publish and discover large materials datasets; designed for ML pipelines.
 - 🟢 🧮🧪 **[Materials Commons](https://materialscommons.org/)** — Collaborative platform for storing and sharing experimental/computational materials data with provenance.
 
-## 8. Microscopy and Image Datasets · 显微与图像数据集
+## 8. Microscopy and Image Datasets
 
-图像类数据——做计算机视觉 / 显微图像分割与分类的素材。
+Image data — material for computer vision, micrograph segmentation, and classification.
 
 - 🟢 🧪 **[DoITPoMS Micrograph Library](https://www.doitpoms.ac.uk/miclib/)** — Hundreds of annotated optical and electron micrographs (Cambridge).
 - 🟢 🧪 **[UHCSDB — Ultrahigh Carbon Steel Micrograph DB](http://uhcsdb.materials.cmu.edu/)** — Labeled SEM micrographs of steel microstructures with metadata (CMU).
 - 🟢 🧮🧪 **[NOMAD AI Toolkit / Encyclopedia](https://nomad-lab.eu/)** — Includes visualizable computed materials data alongside the calculation archive.
 
-## 9. Interatomic Potentials and Force Fields · 原子间势与力场
+## 9. Interatomic Potentials and Force Fields
 
-势函数与基础模型——分子动力学和大尺度模拟的核心。
+Potentials and foundation models — the core of molecular dynamics and large-scale simulation.
 
 - 🟢 🧮 **[OpenKIM](https://openkim.org/)** — Curated, tested interatomic models with a simulator-agnostic API and reproducibility tests.
 - 🟢 🧮 **[NIST Interatomic Potentials Repository](https://www.ctcms.nist.gov/potentials/)** — Vetted classical potentials (EAM, MEAM, ReaxFF, …) with evaluation data.
 - 🟢 🧮 **[MatPES](https://matpes.ai/)** — Foundational potential-energy-surface dataset for training universal MLIPs (Materials Virtual Lab).
 
-## 10. Software and Tools · 软件与工具
+## 10. Software and Tools
 
-读取/处理这些数据库、做特征工程与训练模型的常用库。
+Common libraries for reading/processing these databases, featurization, and model training.
 
 - 🟢 **[pymatgen](https://pymatgen.org/)** — The standard Python library for materials analysis and Materials Project access.
 - 🟢 **[matminer](https://hackingmaterials.lbl.gov/matminer/)** — Data mining and featurization toolkit; ships with many ready-to-use dataset loaders.
@@ -193,18 +195,18 @@
 - 🟢 **[MACE](https://github.com/ACEsuit/mace)** — High-accuracy equivariant message-passing interatomic potentials.
 - 🟢 **[DScribe](https://github.com/SINGROUP/dscribe)** — Library of descriptors (SOAP, MBTR, Coulomb matrix, …) for ML on atomistic systems.
 
-## 11. Literature Mining and Text Resources · 文献挖掘与文本资源
+## 11. Literature Mining and Text Resources
 
-从论文里"挖"数据、做 NLP / 知识图谱的工具与语料入口。
+Tools and corpora for mining data from papers and building NLP / knowledge graphs.
 
 - 🟢 **[Matscholar](https://matscholar.com/)** — Materials-aware literature search built on NLP over 5M+ abstracts (named-entity recognition for materials, properties, methods).
 - 🟢 **[ChemDataExtractor](http://www.chemdataextractor.org/)** — Toolkit for automatically extracting chemical information and property tables from text.
 - 🟢 **[OpenAlex](https://openalex.org/)** — Fully open index of 250M+ scholarly works, authors, and concepts, with a free API.
 - 🟢 **[Semantic Scholar API](https://www.semanticscholar.org/product/api)** — Free programmatic access to paper metadata, abstracts, citations, and embeddings.
 
-## 12. Books and Handbooks · 书籍与手册
+## 12. Books and Handbooks
 
-权威纸质/电子手册——查标准数值和经验关联式时仍然是金标准。
+Authoritative print / electronic handbooks — still the gold standard for standard values and empirical correlations.
 
 - **Materials Handbook**, 15th Edition — Brady, Clauser & Vaccari
 - **Smithells Metals Reference Book**, 8th Edition — Gale & Totemeier
@@ -215,26 +217,22 @@
 - **CASTI Metals Handbook — Nonferrous Metals**, 4th Edition
 - **Materials Handbook: A Concise Desktop Reference**, 2nd Edition — Cardarelli
 
-## 13. Learning Resources and Toy Datasets · 学习资源与教学数据集
+## 13. Learning Resources and Toy Datasets
 
-入门练手用的小数据集、教程与 notebook。
+Small datasets, tutorials, and notebooks for getting started.
 
 - 🟢 **[JARVIS-Tools Notebooks](https://github.com/JARVIS-Materials-Design/jarvis-tools-notebooks)** — Hands-on Colab notebooks for materials ML with JARVIS.
 - 🟢 **[matminer dataset loaders](https://hackingmaterials.lbl.gov/matminer/dataset_summary.html)** — One-line access to dozens of curated benchmark datasets for teaching and prototyping.
 - 🟢 **[nanoHUB](https://nanohub.org/)** — Simulation tools, courses, and published nanomaterial datasets.
 - 🟢 **[Materials Project Workshop](https://workshop.materialsproject.org/)** — Free tutorials on pymatgen, the MP API, and high-throughput workflows.
 
-## 14. Contributing and License · 贡献与许可
+## 14. Contributing and License
 
-**Contributing · 贡献**
+**Contributing**
 Found a dead link, an outdated entry, or a resource that belongs here? Open an issue or a pull request. Please keep entries one line, add the access tag (🟢/🟡/🔴) and data-nature tag (🧮/🧪), and place them in the most relevant section.
 
-发现死链、过期条目或值得收录的资源，欢迎提 Issue 或 PR。请保持一行一条目，标注可获取性（🟢/🟡/🔴）与数据性质（🧮/🧪），并归入最贴切的章节。
-
-**Disclaimer · 免责声明**
+**Disclaimer**
 This is a curated index of *external* resources. Each linked database/dataset retains its own license and terms of use — check them before use. Availability and URLs may change over time.
 
-本清单只是对**外部资源的索引**。每个数据库/数据集都有各自的许可与使用条款，使用前请自行核对。链接与可用性可能随时间变化。
-
-**License · 许可**
-The list itself (this README) is released under [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/) — public domain. 本清单（README 本身）以 CC0 1.0 公有领域方式释出。
+**License**
+The list itself (this README) is released under [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/) — public domain.
