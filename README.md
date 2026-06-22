@@ -90,7 +90,7 @@
 - 🟢 🧪 **[NIST Chemistry WebBook](https://webbook.nist.gov/chemistry/)** — IR, mass, UV-Vis spectra plus thermochemical data for tens of thousands of compounds.
 - 🟢 🧪 **[SDBS (Spectral Database for Organic Compounds)](https://sdbs.db.aist.go.jp/)** — IR, ¹H/¹³C NMR, MS, Raman, and ESR spectra for organic compounds (AIST, Japan).
 - 🟢 🧪 **[HITRAN](https://hitran.org/)** — High-resolution molecular spectroscopic line lists for gas-phase absorption (atmospheric and combustion science).
-- 🟢 🧮 **[Materials Project XAS](https://next-gen.materialsproject.org/)** — Computed X-ray absorption near-edge spectra (XANES/XES) for thousands of materials, queryable via `mp-api`.
+- 🟢 🧮 **[Materials Project XAS](https://next-gen.materialsproject.org/xas)** — FEFF-computed X-ray absorption spectra (XANES + EXAFS, K- and L-edges): 500k+ spectra over 40k+ materials, queryable via `mp-api` (`mpr.materials.xas.search`).
 - 🟢 🧮 **[ORNL AISD-Ex](https://www.osti.gov/biblio/1969001)** — Computed UV/Vis (TD-DFT) absorption spectra for ~10M organic molecules.
 
 ## 5. Domain-Specific Databases · 专题领域数据库
