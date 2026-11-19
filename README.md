@@ -251,6 +251,8 @@ Common libraries for reading/processing these databases, featurization, and mode
 - 🟢 **[RDKit](https://www.rdkit.org/)** — The standard open-source cheminformatics toolkit for molecules and descriptors.
 - 🟢 **[DScribe](https://github.com/SINGROUP/dscribe)** — Library of descriptors (SOAP, MBTR, Coulomb matrix, …) for ML on atomistic systems.
 
+
+- 🔴 🧮 [MatterSeek](https://www.yuyaomatterseek.net/) — proprietary web platform for materials R&D; company-described forward property prediction and inverse design.
 ## 13. Literature Mining and Text Resources
 
 Tools and corpora for mining data from papers and building NLP / knowledge graphs.
